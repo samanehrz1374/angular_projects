@@ -1,0 +1,22 @@
+<h1>{{username}}</h1>
+
+<!-- <p>{{ name }}</p> -->
+<!-- <button>add_user</button> -->
+<div style="margin-bottom: 10px;">
+    <label for="username">Username</label>&nbsp;
+    <input type="text" (input)="onInputChanged($event)">
+</div>
+
+<div style="margin-bottom: 10px;">
+    <label for="password">password</label>&nbsp;
+    <input type="password"  (input)="passwordCheck($event)" >
+</div>
+
+<div style="margin-bottom: 10px;">
+    <label for="passwordconfirm">Repeat password</label>&nbsp;
+    <input type="password" (input)="confirmPasswordCheck($event)">
+</div>
+<label [hidden]="IsPassMatch || password===''">Password do not match!</label>
+<label [hidden]="!IsPassMatch">Password match.</label>
+
+
