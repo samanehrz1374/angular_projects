@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   user:string[]=["samaneh","samira"];
+  switchProperty:string="a";
 
   users:any=[
     {
