@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+  @ContentChild('par',{static:true}) par:ElementRef|any;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.par.nativeElement.textContent)
   }
 
 }
