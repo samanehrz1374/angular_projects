@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-inc',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inc.component.css']
 })
 export class IncComponent implements OnInit {
+  
+  add: number =0;
 
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+  public increament(){
+    this.add++
   }
 
 }
