@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'thirdproject';
+  ratings: number[]=[3.5,5,2,1.5,0.5]
+
+  public onStarClicked(raite: number){
+    console.log(`the raiting ${raite} is clicked`)
+
+  }
 }
