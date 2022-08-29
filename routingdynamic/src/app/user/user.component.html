@@ -1,0 +1,7 @@
+<div *ngIf="IsUserFound;else elsecond">
+    <p>the user id is : {{ selectedId }}</p>
+    <p>the user name is : {{ selectedUser.name }}</p>
+</div>
+<ng-template #elsecond>the user doesnt exist </ng-template>
+<br/>
+<a [routerLink]="['/users','2']">select second user</a>
