@@ -10,6 +10,7 @@ import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { UserService } from './user.service';
 import { AdminComponent } from './admin/admin.component';
+import { NotAuthenticatedComponent } from './not-authenticated/not-authenticated.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AdminComponent } from './admin/admin.component';
     NotfoundComponent,
     UserComponent,
     UsersComponent,
-    AdminComponent
+    AdminComponent,
+    NotAuthenticatedComponent
   ],
   imports: [
     BrowserModule,
