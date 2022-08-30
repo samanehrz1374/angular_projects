@@ -8,6 +8,8 @@ import { EdituserComponent } from './edituser/edituser.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
+import { UserService } from './user.service';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,14 @@ import { UsersComponent } from './users/users.component';
     EdituserComponent,
     NotfoundComponent,
     UserComponent,
-    UsersComponent
+    UsersComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ UserService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

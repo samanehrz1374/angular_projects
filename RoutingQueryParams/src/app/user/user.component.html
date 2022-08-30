@@ -1,1 +1,17 @@
-<p>user works!</p>
+
+
+<div class="container mt-5">
+    <span>{{ user.id + ': '}}</span>
+    <a [routerLink]="['/user',user.id,'edit']" 
+    [queryParams]="{IsAdmin:'1'}" 
+    fragment="title" >
+    {{user.name}}
+</a>
+    <span>{{"=====>"+user.email}}</span>
+
+    <button class="btn btn-secondary mx-5" (click)="editUser()">Edit this user</button>
+
+
+
+</div>
+<router-outlet></router-outlet>
