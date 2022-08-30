@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundError } from 'rxjs';
+import { AdminComponent } from './admin/admin.component';
 import { EdituserComponent } from './edituser/edituser.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'user/:id',component:UserComponent},
   {path:'user/:id/edit',component:EdituserComponent},
   {path:'not-found',component:NotfoundComponent},
+  {path:'admin',component:AdminComponent},
   {path:'**',redirectTo:'not-found'}
 ];
 
