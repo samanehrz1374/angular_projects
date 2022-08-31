@@ -12,4 +12,8 @@ export class TestComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public onClickSubmit(result:any){
+    console.log("You have entered:"+ result.username)
+  }
+
 }

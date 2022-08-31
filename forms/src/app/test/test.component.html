@@ -1,1 +1,14 @@
-<p>test works!</p>
+<div class="container mt-5">
+    
+    
+    <form #username="ngForm" (ngSubmit)="onClickSubmit(username.value)" >
+        <div class="form-row">
+
+            <input class="form-control" type="text" name="username" placeholder="username" ngModel>
+        </div>
+        <br/>
+        <br/>
+        <input class="btn btn-secondary btn-block" type="submit" value="submit">
+     
+    </form>
+</div>

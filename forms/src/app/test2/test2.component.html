@@ -1,0 +1,12 @@
+<div class="container mt-5">
+
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+        <input class="form-control" type="text" name="userName" placeholder="userName" 
+        formControlName = "userName">
+        <br/>
+        <input class="btn btn-danger btn-block" type="submit" value="Click here">
+    </form>
+
+    <p> Textbox result is: {{userName}} </p>
+
+</div>
