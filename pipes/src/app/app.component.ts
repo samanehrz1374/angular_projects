@@ -21,6 +21,8 @@ export class AppComponent {
     id:'one',
     name:{ username: 'user1'}
   };
+
+  digits: number=100;
   
 
 
