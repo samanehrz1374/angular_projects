@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formvalidation',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormvalidationComponent implements OnInit {
 
-  constructor() { }
+  requiredForm: FormGroup;
+   constructor(private fb: FormBuilder) {
+      this.myForm();
+   }
 
-  ngOnInit(): void {
-  }
+   //Create required field validator for name
+   myForm() {
+      this.requiredForm = this.fb.group({
+      name: ['', Validators.required ]
+      });
+   }
+   ngOnInit()
+   {
+
+   }
 
 }
